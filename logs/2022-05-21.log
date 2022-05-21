@@ -76,3 +76,4 @@ TypeError: request() missing 1 required positional argument: 'url'
 2022-05-21 20:58:14,218 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:58:13 >>>>>> 开始执行：
 2022-05-21 20:58:14,525 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 0, 'info': '没有找到相关信息！'}
 2022-05-21 20:58:14,525 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:58:13 >>>>>> 开始执行：
+2022-05-21 21:42:23,225 INFO F:/Desktop/Heson_Files/Testman_Study/source_code/api_auto_framework/api/daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
