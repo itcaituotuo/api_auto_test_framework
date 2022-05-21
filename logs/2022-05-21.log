@@ -1,0 +1,78 @@
+2022-05-21 20:29:28,673 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\utils\get_yml_data.py 40 [Errno 2] No such file or directory: 'F:\\Desktop\\Heson_Files\\Testman_Study\\source_code\\api_auto_framework\\/config/url_token.yml'
+2022-05-21 20:29:28,675 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 37 接口请求失败！
+2022-05-21 20:29:28,676 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 38 Traceback (most recent call last):
+  File "F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py", line 34, in requests_http
+    result = requests.request(**req, timeout=10)
+TypeError: request() missing 1 required positional argument: 'url'
+
+2022-05-21 20:29:28,677 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 39 request() missing 1 required positional argument: 'url'
+2022-05-21 20:29:56,682 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\utils\get_yml_data.py 40 [Errno 2] No such file or directory: 'F:\\Desktop\\Heson_Files\\Testman_Study\\source_code\\api_auto_framework\\/config/url_token.yml'
+2022-05-21 20:29:56,684 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 37 接口请求失败！
+2022-05-21 20:29:56,685 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 38 Traceback (most recent call last):
+  File "F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py", line 34, in requests_http
+    result = requests.request(**req)
+TypeError: request() missing 1 required positional argument: 'url'
+
+2022-05-21 20:29:56,685 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 39 request() missing 1 required positional argument: 'url'
+2022-05-21 20:30:27,677 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\utils\get_yml_data.py 40 [Errno 2] No such file or directory: 'F:\\Desktop\\Heson_Files\\Testman_Study\\source_code\\api_auto_framework\\/config/url_token.yml'
+2022-05-21 20:30:27,680 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 37 接口请求失败！
+2022-05-21 20:30:27,681 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 38 Traceback (most recent call last):
+  File "F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py", line 34, in requests_http
+    result = requests.request(**req, timeout=10)
+TypeError: request() missing 1 required positional argument: 'url'
+
+2022-05-21 20:30:27,681 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 39 request() missing 1 required positional argument: 'url'
+2022-05-21 20:34:25,539 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 37 接口请求失败！
+2022-05-21 20:34:25,540 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 38 Traceback (most recent call last):
+  File "F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py", line 34, in requests_http
+    result = requests.request(**req, timeout=10)
+TypeError: request() missing 1 required positional argument: 'url'
+
+2022-05-21 20:34:25,540 ERROR F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\base_api.py 39 request() missing 1 required positional argument: 'url'
+2022-05-21 20:37:35,526 INFO F:/Desktop/Heson_Files/Testman_Study/source_code/api_auto_framework/api/daxue.py 35 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:40:32,705 INFO F:/Desktop/Heson_Files/Testman_Study/source_code/api_auto_framework/api/daxue.py 34 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:41:00,801 INFO F:/Desktop/Heson_Files/Testman_Study/source_code/api_auto_framework/api/daxue.py 31 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:43:41,002 INFO F:/Desktop/Heson_Files/Testman_Study/source_code/api_auto_framework/api/daxue.py 34 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:44:08,316 INFO F:/Desktop/Heson_Files/Testman_Study/source_code/api_auto_framework/api/daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:50:28,585 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:50:28 >>>>>> 开始执行：
+2022-05-21 20:50:28,928 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:50:28,930 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:50:28 >>>>>> 开始执行：
+2022-05-21 20:52:38,729 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:52:38 >>>>>> 开始执行：
+2022-05-21 20:52:39,112 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '1124', 'name': '厦门大学', 'code': '4135010384', 'department': '教育部', 'city': '厦门市', 'level': '本科', 'remark': ''}, {'id': '1153', 'name': '厦门大学嘉庚学院', 'code': '4135013469', 'department': '福建省教育厅', 'city': '漳州市', 'level': '本科', 'remark': '民办'}]}
+2022-05-21 20:52:39,114 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:52:38 >>>>>> 开始执行：
+2022-05-21 20:52:39,116 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:52:38 >>>>>> 开始执行：
+2022-05-21 20:52:39,432 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:52:39,433 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:52:38 >>>>>> 开始执行：
+2022-05-21 20:52:39,435 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:52:38 >>>>>> 开始执行：
+2022-05-21 20:52:39,739 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 0, 'info': '没有找到相关信息！'}
+2022-05-21 20:52:39,846 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:52:38 >>>>>> 开始执行：
+2022-05-21 20:52:54,723 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:52:54 >>>>>> 开始执行：
+2022-05-21 20:52:55,039 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '1124', 'name': '厦门大学', 'code': '4135010384', 'department': '教育部', 'city': '厦门市', 'level': '本科', 'remark': ''}, {'id': '1153', 'name': '厦门大学嘉庚学院', 'code': '4135013469', 'department': '福建省教育厅', 'city': '漳州市', 'level': '本科', 'remark': '民办'}]}
+2022-05-21 20:52:55,041 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:52:54 >>>>>> 开始执行：
+2022-05-21 20:52:55,042 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:52:54 >>>>>> 开始执行：
+2022-05-21 20:52:55,395 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:52:55,396 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:52:54 >>>>>> 开始执行：
+2022-05-21 20:52:55,398 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 16 2022-05-21 20:52:54 >>>>>> 开始执行：
+2022-05-21 20:52:55,701 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 0, 'info': '没有找到相关信息！'}
+2022-05-21 20:52:55,702 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 19 2022-05-21 20:52:54 >>>>>> 开始执行：
+2022-05-21 20:56:36,113 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:56:36 >>>>>> 开始执行：
+2022-05-21 20:56:36,425 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '1124', 'name': '厦门大学', 'code': '4135010384', 'department': '教育部', 'city': '厦门市', 'level': '本科', 'remark': ''}, {'id': '1153', 'name': '厦门大学嘉庚学院', 'code': '4135013469', 'department': '福建省教育厅', 'city': '漳州市', 'level': '本科', 'remark': '民办'}]}
+2022-05-21 20:56:36,426 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:56:36 >>>>>> 开始执行：
+2022-05-21 20:56:36,430 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:56:36 >>>>>> 开始执行：
+2022-05-21 20:56:36,739 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:56:36,739 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:56:36 >>>>>> 开始执行：
+2022-05-21 20:56:36,745 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:56:36 >>>>>> 开始执行：
+2022-05-21 20:56:37,060 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 0, 'info': '没有找到相关信息！'}
+2022-05-21 20:56:37,061 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:56:36 >>>>>> 开始执行：
+2022-05-21 20:57:52,503 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:57:52 >>>>>> 开始执行：
+2022-05-21 20:57:52,812 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '1124', 'name': '厦门大学', 'code': '4135010384', 'department': '教育部', 'city': '厦门市', 'level': '本科', 'remark': ''}, {'id': '1153', 'name': '厦门大学嘉庚学院', 'code': '4135013469', 'department': '福建省教育厅', 'city': '漳州市', 'level': '本科', 'remark': '民办'}]}
+2022-05-21 20:57:52,813 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:57:52 >>>>>> 开始执行：
+2022-05-21 20:58:13,599 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:58:13 >>>>>> 开始执行：
+2022-05-21 20:58:13,923 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:58:13,923 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:58:13 >>>>>> 开始执行：
+2022-05-21 20:58:13,927 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:58:13 >>>>>> 开始执行：
+2022-05-21 20:58:14,214 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 1, 'info': '查询成功！', 'data': [{'id': '2181', 'name': '四川轻化工大学', 'code': '4151010622', 'department': '四川省', 'city': '自贡市', 'level': '本科', 'remark': ''}]}
+2022-05-21 20:58:14,214 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:58:13 >>>>>> 开始执行：
+2022-05-21 20:58:14,218 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 18 2022-05-21 20:58:13 >>>>>> 开始执行：
+2022-05-21 20:58:14,525 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\api\daxue.py 33 {'status': 0, 'info': '没有找到相关信息！'}
+2022-05-21 20:58:14,525 INFO F:\Desktop\Heson_Files\Testman_Study\source_code\api_auto_framework\cases\daxue.py 21 2022-05-21 20:58:13 >>>>>> 开始执行：
