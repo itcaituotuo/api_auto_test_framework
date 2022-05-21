@@ -8,4 +8,7 @@ import requests
 res = requests.post(url="https://www.iamwawa.cn/home/daxue/ajax",
                     headers={"user-agent": "Chrome"},
                     data={"type": "name", "keyword": "四川轻化工大学"})
-print(res.json())
+assert res.status_code == 200
+res_json = res.json()
+print(res_json)
+assert res_json["status"] == 1
