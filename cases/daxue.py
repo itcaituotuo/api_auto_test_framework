@@ -18,7 +18,7 @@ class TestCaseDaXue:
         self.logger.info(self.time + " >>>>>> 开始执行：")
 
     def teardown(self):
-        self.logger.info(self.time + " >>>>>> 开始执行：")
+        self.logger.info(self.time + " >>>>>> 执行结束！")
 
     @allure.title("真实大学——四川轻化工大学")
     def test1(self):
