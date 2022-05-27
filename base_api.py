@@ -49,7 +49,7 @@ class BaseApi:
         :return:
         """
 
-        # 判断请求数据格式 data/json/param
+        # 判断请求数据格式 data/json/params
         data_type = ""
         method = method.upper()
         if method == "POST":
