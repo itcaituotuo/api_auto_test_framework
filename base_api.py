@@ -28,7 +28,7 @@ class BaseApi:
         # 传统的写法：
         # r = requests.request(method="post",
         #                      url="http://ip:port/login",
-        #                      params={"username": "sang", "password": "123"})
+        #                      json={"username": "sang", "password": "123"})
 
         try:
             # ** 解包，将字典格式数据解包成 method="post",url="http://ip:port/login",……
@@ -58,7 +58,7 @@ class BaseApi:
             elif content_type == "application/json":
                 data_type = "json"
         elif method == "GET":
-            data_type = "param"
+            data_type = "params"
         else:
             self.logger.error("method或content_type有误！")
         req = {
