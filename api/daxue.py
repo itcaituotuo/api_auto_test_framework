@@ -9,29 +9,34 @@ from utils.get_yml_data import GetYmlData
 
 class DaXue(BaseApi):
     def __init__(self):
-        super().__init__()
+        super(DaXue, self).__init__()
 
     # 接口信息
     # Request URL
-    request_url = "/home/daxue/ajax"
+    url = "/home/daxue/ajax"
     # Request Method
     method = "POST"
+    # ContentType
+    content_type = "application/x-www-form-urlencoded"
 
-    # Content-Type: application/x-www-form-urlencoded
+    # def daxue(self, data_path):
+    #     data = GetYmlData().get_yml_data(data_path)
+    #     req = {
+    #         "url": self.config["url"] + self.url,
+    #         "method": self.method,
+    #         "headers": self.config["headers"],
+    #         "data": data["req"]
+    #     }
+    #     res = self.requests_http(req)
+    #     assert res.status_code == 200
+    #     res_json = res.json()
+    #     self.logger.info(res_json)
+    #     assert res_json["status"] == data["res"]["status"]
 
     def daxue(self, data_path):
         data = GetYmlData().get_yml_data(data_path)
-        req = {
-            "url": self.config["url"] + self.request_url,
-            "method": self.method,
-            "headers": self.config["headers"],
-            "data": data["req"]
-        }
-        res = self.requests_http(req)
-        assert res.status_code == 200
-        res_json = res.json()
-        self.logger.info(res_json)
-        assert res_json["status"] == data["res"]["status"]
+        res = self.api_temp(self.url, self.method, self.content_type, data)
+        return res
 
 
 if __name__ == '__main__':
