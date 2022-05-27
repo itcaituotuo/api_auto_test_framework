@@ -51,14 +51,16 @@ class BaseApi:
 
         # 判断请求数据格式 data/json/param
         data_type = ""
-        if content_type == "application/x-www-form-urlencoded":
-            data_type = "data"
-        elif content_type == "application/json":
-            data_type = "json"
-        elif method.upper() == "GET":
+        method = method.upper()
+        if method == "POST":
+            if content_type == "application/x-www-form-urlencoded":
+                data_type = "data"
+            elif content_type == "application/json":
+                data_type = "json"
+        elif method == "GET":
             data_type = "param"
         else:
-            self.logger.error("content_type有误")
+            self.logger.error("method或content_type有误！")
         req = {
             "url": self.config["url"] + request_url,
             "method": method,
