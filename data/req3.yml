@@ -2,4 +2,4 @@ req:
   type: name
   keyword: 不存在的大学
 res:
-  status: 0
+  status: 1

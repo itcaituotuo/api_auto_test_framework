@@ -5,6 +5,7 @@
 
 import requests
 import traceback
+import jsonpath
 
 from utils.get_logger import GetLogger
 from utils.get_time import GetTime
@@ -30,10 +31,49 @@ class BaseApi:
         #                      params={"username": "sang", "password": "123"})
 
         try:
-            # ** 解包，将字典格式解包成 method="post",url="http://ip:port/login"
+            # ** 解包，将字典格式数据解包成 method="post",url="http://ip:port/login",……
             result = requests.request(**req, timeout=10)
             return result
         except Exception as e:
             self.logger.error("接口请求失败！")
             self.logger.error(traceback.format_exc())
             self.logger.error(e)
+
+    def api_temp(self, request_url, method, content_type, data) -> dict:
+        """
+        接口请求封装
+        :param request_url: Request URL
+        :param method: Request Method
+        :param content_type: ContentType
+        :param data: 请求参数
+        :return:
+        """
+
+        # 判断请求数据格式 data/json/param
+        data_type = ""
+        if content_type == "application/x-www-form-urlencoded":
+            data_type = "data"
+        elif content_type == "application/json":
+            data_type = "json"
+        elif method.upper() == "GET":
+            data_type = "param"
+        else:
+            self.logger.error("content_type有误")
+        req = {
+            "url": self.config["url"] + request_url,
+            "method": method,
+            "headers": self.config["headers"],
+            data_type: data["req"]
+        }
+        self.logger.info("请求数据：" + str(req))
+        res = self.requests_http(req)
+        assert res.status_code == 200
+        res_json = res.json()
+        self.logger.info("响应数据：" + str(res_json))
+        for key in data["res"]:
+            """ 断言结果 """
+            actual = jsonpath.jsonpath(res_json, "$..{}".format(key))[0]  # 默认第一个
+            expect = data["res"][key]
+            self.logger.info("实际结果：{}={}，预期结果：{}={}".format(key, actual, key, expect))
+            assert actual == expect
+        return res_json
