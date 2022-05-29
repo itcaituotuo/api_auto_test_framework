@@ -2,11 +2,13 @@
 # 作者：IT小学生蔡坨坨
 # 时间：2022/3/16 20:10
 # 功能：日志模块封装
-import datetime
+
 import os
 import time
 import logging
 from logging import handlers
+
+from coloredlogs import ColoredFormatter
 
 from utils.get_path_info import GetPathInfo
 
@@ -42,11 +44,16 @@ class GetLogger(object):
                                                                   when='D',  # 按天分隔，一天一个文件
                                                                   interval=30,
                                                                   encoding='utf-8')
-
+        log_colors_config = {'DEBUG': 'white',
+                             'INFO': 'cyan',
+                             'WARNING': 'yellow',
+                             'ERROR': 'red',
+                             'CRITICAL': 'bold_red'}
         # 日志输出格式
         fmt = "%(asctime)s %(levelname)s %(pathname)s %(lineno)d %(message)s"
         # fmt = "%(name)s %(asctime)s %(created)f %(relativeCreated)d %(msecs)d %(levelname)s %(levelno)s %(pathname)s %(filename)s %(module)s %(funcName)s %(lineno)d %(process)d %(thread)d %(threadName)s %(message)s"
-        formatter = logging.Formatter(fmt)
+        # formatter = logging.Formatter(fmt)
+        formatter = ColoredFormatter(fmt)
         rotating_file_handler.setFormatter(formatter)
 
         # 加上判断，避免重复打印日志

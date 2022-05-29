@@ -71,7 +71,7 @@ class BaseApi:
         res = self.requests_http(req)
         assert res.status_code == 200
         res_json = res.json()
-        self.logger.info("响应数据：" + str(res_json))
+        self.logger.debug("响应数据：" + str(res_json))
         for key in data["res"]:
             """ 断言结果 """
             actual = jsonpath.jsonpath(res_json, "$..{}".format(key))[0]  # 默认第一个

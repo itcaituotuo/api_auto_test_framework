@@ -4,6 +4,7 @@
 # 功能：测试用例
 
 import allure
+import pytest
 
 from utils.get_logger import GetLogger
 from utils.get_time import GetTime
@@ -31,3 +32,7 @@ class TestCaseDaXue:
     @allure.title("不存在的大学")
     def test3(self):
         DaXue().daxue("data/req3.yml")
+
+
+if __name__ == '__main__':
+    pytest.main()
