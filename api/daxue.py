@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# 作者：IT小学生蔡坨坨（caituotuo.top）
+# 作者：测试蔡坨坨（caituotuo.top）
 # 时间：2022/5/21 20:20
 # 功能：将http请求封装成Python方法
 

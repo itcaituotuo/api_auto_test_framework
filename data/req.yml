@@ -1,7 +1,7 @@
 req:
   type: name
-  keyword: 四川轻化工大学
+  keyword: 四川大学
 res:
   status: 1
-  name: 四川轻化工大学
+  name: 四川大学
   code: '4151010622'

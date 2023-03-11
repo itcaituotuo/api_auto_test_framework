@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# 作者：IT小学生蔡坨坨（caituotuo.top）
+# 作者：测试蔡坨坨（caituotuo.top）
 # 时间：2022/5/21 20:45
 # 功能：测试用例
 
@@ -21,7 +21,7 @@ class TestCaseDaXue:
     def teardown(self):
         self.logger.info(self.time + " >>>>>> 执行结束！")
 
-    @allure.title("真实大学——四川轻化工大学")
+    @allure.title("真实大学——四川大学")
     def test1(self):
         DaXue().daxue("data/req.yml")
 
