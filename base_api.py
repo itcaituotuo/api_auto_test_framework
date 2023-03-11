@@ -76,6 +76,9 @@ class BaseApi:
             """ 断言结果 """
             actual = jsonpath.jsonpath(res_json, "$..{}".format(key))[0]  # 默认第一个
             expect = data["res"][key]
-            self.logger.info("实际结果：{}={}，预期结果：{}={}".format(key, actual, key, expect))
-            assert actual == expect
+            try:
+                assert actual == expect
+            except AssertionError as e:
+                self.logger.error("断言失败，实际结果：{}={}，预期结果：{}={}".format(key, actual, key, expect))
+                raise e
         return res_json
