@@ -76,5 +76,3 @@ if __name__ == '__main__':
     logger.warning('警告')
     logger.error('报错')
     logger.critical('严重')
-    # print(datetime.datetime.now())
-    # print(time.time())
