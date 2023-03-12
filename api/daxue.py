@@ -1,10 +1,9 @@
-# -*- coding:utf-8 -*-
 # 作者：测试蔡坨坨（caituotuo.top）
 # 时间：2022/5/21 20:20
 # 功能：将http请求封装成Python方法
 
 from base_api import BaseApi
-from utils.get_yml_data import GetYmlData
+from utils.yaml_utils import YamlUtils
 
 
 class DaXue(BaseApi):
@@ -20,7 +19,7 @@ class DaXue(BaseApi):
     content_type = "application/x-www-form-urlencoded"
 
     # def daxue(self, data_path):
-    #     data = GetYmlData().get_yml_data(data_path)
+    #     data = YamlUtils().get_yml_data(data_path)
     #     req = {
     #         "url": self.config["url"] + self.url,
     #         "method": self.method,
@@ -34,7 +33,7 @@ class DaXue(BaseApi):
     #     assert res_json["status"] == data["res"]["status"]
 
     def daxue(self, data_path):
-        data = GetYmlData().get_yml_data(data_path)
+        data = YamlUtils().get_yml_data(data_path)
         res = self.api_temp(self.url, self.method, self.content_type, data)
         return res
 

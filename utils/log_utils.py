@@ -10,10 +10,10 @@ from logging import handlers
 
 from coloredlogs import ColoredFormatter
 
-from utils.get_path_info import GetPathInfo
+from utils.path_utils import PathUtils
 
 
-class GetLogger(object):
+class LogUtils(object):
     """ 日志封装类 """
 
     @classmethod
@@ -30,7 +30,7 @@ class GetLogger(object):
         }  # 日志级别关系映射
 
         # 创建日志存放的目录
-        project_path = GetPathInfo().get_project_path()  # get_project_path()获取项目根目录
+        project_path = PathUtils().get_project_path()  # get_project_path()获取项目根目录
         logs_dir = project_path + "logs"
         if os.path.exists(logs_dir) and os.path.isdir(logs_dir):
             pass
@@ -70,7 +70,7 @@ class GetLogger(object):
 
 
 if __name__ == '__main__':
-    logger = GetLogger().get_logger()
+    logger = LogUtils().get_logger()
     logger.debug('调试')
     logger.info('信息')
     logger.warning('警告')

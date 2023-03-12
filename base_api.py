@@ -7,16 +7,16 @@ import requests
 import traceback
 import jsonpath
 
-from utils.get_logger import GetLogger
-from utils.get_time import GetTime
-from utils.get_yml_data import GetYmlData
+from utils.log_utils import LogUtils
+from utils.datetime_utils import DateTimeUtils
+from utils.yaml_utils import YamlUtils
 
 
 class BaseApi:
     def __init__(self):
-        self.logger = GetLogger().get_logger()
-        self.now_datetime = GetTime().get_now_datetime()
-        self.config = GetYmlData().get_config()
+        self.logger = LogUtils().get_logger()
+        self.now_datetime = DateTimeUtils().get_now_datetime()
+        self.config = YamlUtils().get_config()
 
     def requests_http(self, req):
         """

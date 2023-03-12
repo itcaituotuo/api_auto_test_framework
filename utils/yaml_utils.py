@@ -6,13 +6,13 @@
 
 import yaml
 from string import Template
-from utils.get_logger import GetLogger
-from utils.get_path_info import GetPathInfo
+from utils.log_utils import LogUtils
+from utils.path_utils import PathUtils
 
 
-class GetYmlData:
+class YamlUtils:
     def __init__(self):
-        self.logger = GetLogger().get_logger()
+        self.logger = LogUtils().get_logger()
 
     def get_yml_data(self, data_path, value=None):
         """
@@ -24,7 +24,7 @@ class GetYmlData:
 
         try:
             # 项目根目录
-            project_path = GetPathInfo().get_project_path()
+            project_path = PathUtils().get_project_path()
             # 根目录 + 相对路径 = 绝对路径
             yml_path = project_path + "/" + data_path
 

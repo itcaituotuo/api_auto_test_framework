@@ -6,12 +6,12 @@
 import time
 import traceback
 
-from utils.get_logger import GetLogger
+from utils.log_utils import LogUtils
 
 
-class GetTime:
+class DateTimeUtils:
     def __init__(self):
-        self.logger = GetLogger().get_logger()
+        self.logger = LogUtils().get_logger()
 
     def get_now_datetime(self):
         try:
@@ -23,4 +23,4 @@ class GetTime:
 
 
 if __name__ == '__main__':
-    print(GetTime().get_now_datetime())
+    print(DateTimeUtils().get_now_datetime())

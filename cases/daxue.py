@@ -6,14 +6,14 @@
 import allure
 import pytest
 
-from utils.get_logger import GetLogger
-from utils.get_time import GetTime
+from utils.log_utils import LogUtils
+from utils.datetime_utils import DateTimeUtils
 from api.daxue import DaXue
 
 
 class TestCaseDaXue:
-    time = GetTime().get_now_datetime()
-    logger = GetLogger().get_logger()
+    time = DateTimeUtils().get_now_datetime()
+    logger = LogUtils().get_logger()
 
     def setup(self):
         self.logger.info(self.time + " >>>>>> 开始执行：")
